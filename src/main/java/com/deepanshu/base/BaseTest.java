@@ -1,10 +1,12 @@
 package com.deepanshu.base;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import com.deepanshu.config.ConfigReader;
 import com.deepanshu.factory.DriverFactory;
+import com.deepanshu.utilities.ScreenshotUtil;
 
 public class BaseTest {
 
@@ -22,9 +24,16 @@ public class BaseTest {
     }
 
     @AfterMethod
-    public void tearDown() {
+    public void tearDown(ITestResult result) 
+    {
 
-        if(driver != null)
-            driver.quit();
+
+        if(result.getStatus()==ITestResult.FAILURE) {
+
+            ScreenshotUtil.capture(driver,result.getName());
+
+        }
+
+        driver.quit();
     }
 }

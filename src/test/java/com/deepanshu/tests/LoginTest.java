@@ -21,6 +21,18 @@ public class LoginTest extends BaseTest {
         HomePage homePage = new HomePage(driver);
 
         Assert.assertEquals(homePage.getPageTitle(), "Products");
+    }
+        
+        @Test
+        public void invalidLogin() 
+        {
+
+            LoginPage login = new LoginPage(driver);
+
+            login.login("abc","xyz");
+
+            Assert.assertTrue(driver.getCurrentUrl().contains("saucedemo"));
+
+        }
 
     }
-}
