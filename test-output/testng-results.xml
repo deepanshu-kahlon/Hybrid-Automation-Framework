@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-28T12:17:26 IST" name="Hybrid Automation Suite" finished-at="2026-06-28T12:18:05 IST" duration-ms="39118">
+  <suite started-at="2026-06-29T23:18:50 IST" name="Hybrid Automation Suite" finished-at="2026-06-29T23:19:06 IST" duration-ms="16040">
     <groups>
     </groups>
-    <test started-at="2026-06-28T12:17:26 IST" name="Smoke Test" finished-at="2026-06-28T12:18:05 IST" duration-ms="39118">
-      <class name="com.deepanshu.tests.LaunchApplicationTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.deepanshu.tests.LaunchApplicationTest@702657cc]" started-at="2026-06-28T12:17:26 IST" name="setup" finished-at="2026-06-28T12:18:04 IST" duration-ms="38605" status="PASS">
+    <test started-at="2026-06-29T23:18:50 IST" name="Smoke Test" finished-at="2026-06-29T23:19:06 IST" duration-ms="16040">
+      <class name="com.deepanshu.tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.deepanshu.tests.LoginTest@702657cc]" started-at="2026-06-29T23:18:50 IST" name="setup" finished-at="2026-06-29T23:19:05 IST" duration-ms="15121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyApplicationLaunch()[pri:0, instance:com.deepanshu.tests.LaunchApplicationTest@702657cc]" started-at="2026-06-28T12:18:04 IST" name="verifyApplicationLaunch" finished-at="2026-06-28T12:18:04 IST" duration-ms="34" status="PASS">
+        <test-method signature="verifyValidLogin()[pri:0, instance:com.deepanshu.tests.LoginTest@702657cc]" started-at="2026-06-29T23:19:05 IST" name="verifyValidLogin" finished-at="2026-06-29T23:19:05 IST" duration-ms="575" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyApplicationLaunch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.deepanshu.tests.LaunchApplicationTest@702657cc]" started-at="2026-06-28T12:18:04 IST" name="tearDown" finished-at="2026-06-28T12:18:05 IST" duration-ms="408" status="PASS">
+        </test-method> <!-- verifyValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.deepanshu.tests.LoginTest@702657cc]" started-at="2026-06-29T23:19:05 IST" name="tearDown" finished-at="2026-06-29T23:19:06 IST" duration-ms="233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.deepanshu.tests.LaunchApplicationTest -->
+      </class> <!-- com.deepanshu.tests.LoginTest -->
     </test> <!-- Smoke Test -->
   </suite> <!-- Hybrid Automation Suite -->
 </testng-results>

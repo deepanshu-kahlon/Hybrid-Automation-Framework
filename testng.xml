@@ -6,7 +6,7 @@
 
         <classes>
 
-            <class name="com.deepanshu.tests.LaunchApplicationTest"/>
+            <class name="com.deepanshu.tests.LoginTest"/>
 
         </classes>
 
