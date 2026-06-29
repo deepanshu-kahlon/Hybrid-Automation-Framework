@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import com.deepanshu.base.BaseTest;
 import com.deepanshu.pages.HomePage;
 import com.deepanshu.pages.LoginPage;
+import com.deepanshu.utilities.ExcelDataProvider;
 
 public class LoginTest extends BaseTest {
 
@@ -33,6 +34,18 @@ public class LoginTest extends BaseTest {
 
             Assert.assertTrue(driver.getCurrentUrl().contains("saucedemo"));
 
+        }
+        
+        @Test(dataProvider="LoginData",
+        	      dataProviderClass=ExcelDataProvider.class)
+        	public void verifyLogin(String username,
+        	                        String password,
+        	                        String expected) 
+        {
+        	LoginPage loginPage = new LoginPage(driver);
+
+        	loginPage.login(username, password);
+        	 
         }
 
     }
